@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #6c4f3d;
+    color: white;
+    padding:20px;
+    text-align: center;
+    animation: fadeIn 2s;
+    height: 20vh;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+nav {
+    background-color: #8a6341;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 1.5s;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.menu-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(0.9);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin: 8px;
+}
+
+.menu-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.about {
+    background-color: #fff;
+    padding: 40px;
+    animation: fadeInUp 1.5s;
+}
+
+.about p {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+    animation: fadeInUp 1.5s;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact button {
+    background-color: #6c4f3d;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #8a6341;
+}
+
+.gallery {
+    background-image: url('gallary\ img.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    animation: fadeIn 2s;
+}
+
+.gallery h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.gallery p {
+    margin: 20px ;
+    font-size: 20px;
+}
+
+.events {
+    background-image: url('event\ img.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    animation: fadeIn 2s;
+    margin-bottom: 25px;
+}
+
+.events h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.events p {
+    margin: 1rem 0 0;
+    font-size: 22px;
+}
+
+footer {
+    background-color: #6c4f3d;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
